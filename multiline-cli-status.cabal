@@ -1,0 +1,27 @@
+cabal-version:      3.4
+name:               multiline-cli-status
+version:            0.1.0.0
+-- synopsis:
+-- description:
+homepage:           https://github.com/yutotakano/multiline-cli-status
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Yuto Takano
+maintainer:         moa17stock@gmail.com
+-- copyright:
+category:           System
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  MyLib
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.21.0.0
+    hs-source-dirs:   src
+    default-language: Haskell2010
